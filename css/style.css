@@ -62,7 +62,7 @@ input {
     font-size:1.1rem;
 }
 
-button {
+#checkButton {
     background-color: var(--third-color);
     color: black;
     padding:10px 20px;
@@ -72,6 +72,10 @@ button {
 
 .white {
     background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .green {
@@ -88,4 +92,11 @@ button {
     flex-direction: row;
     align-items:end;
     gap:20px;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    display:none;
+    text-align: center;
 }

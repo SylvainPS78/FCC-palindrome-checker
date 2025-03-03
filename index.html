@@ -20,13 +20,14 @@
         <h1>Is it a Palindrome ?</h1>
 
         <div class="container white">
-            <form id="form" action="/submit" method="post">
+            <form id="form">
                 <label for="user-input">Enter in text to check for a palindrome:</label>
                 <div class="UI">  
-                    <input type="text" id="user-input" name="user-input" required>
-                    <button type="submit">Check</button>
+                    <input type="text" id="user-input" placeholder="Enter text here" id="user-input" required>
+                    <button id="checkButton" type="submit">Check</button>
                 </div>  
             </form>
+            <p id="result"></p>
         </div>
 
         <div class="container green">
