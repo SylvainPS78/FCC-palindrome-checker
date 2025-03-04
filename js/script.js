@@ -27,8 +27,9 @@ checkButton.addEventListener('click', function(event) {
     event.preventDefault();
     const input = userInput.value;
     const cleanInput = cleanInputString(input);
-    if (isValidInput(cleanInput)) {
-        if (isPalindrome(cleanInput)) {
+    const lowCaseInput = cleanInput.toLowerCase();
+    if (isValidInput(lowCaseInput)) {
+        if (isPalindrome(lowCaseInput)) {
             result.innerText = "Palindrome !";
         }
         else {
