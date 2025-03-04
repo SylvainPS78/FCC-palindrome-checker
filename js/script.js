@@ -30,16 +30,18 @@ checkButton.addEventListener('click', function(event) {
     const lowCaseInput = cleanInput.toLowerCase();
     if (isValidInput(lowCaseInput)) {
         if (isPalindrome(lowCaseInput)) {
-            result.innerText = "Palindrome !";
+            result.innerText = `${cleanInput} is a palindrome !`;
         }
         else {
-            result.innerText = "Not a palindrome.";
+            result.innerText = `${cleanInput} is not a palindrome.`;
         }
         result.style.display = "block";
+        userInput.value="";
     }
     else {
         result.innerText = "Invalid input. Please enter only letters.";
         result.style.display = "block";
+        userInput.value="";
     }
 });
 
